@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Princess Themed Bootstrap Layout</title>
+
+<!-- Bootstrap -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  body {
+    background-color: #ffe4e1; /* 淡粉色背景 */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+  }
+  .navbar {
+    background-color: #ff69b4; /* 熱粉色 */
+  }
+  .navbar-brand, .nav-link {
+    color: #ffffff !important;
+  }
+  .jumbotron {
+    background-color: #ffb6c1; /* 淺粉色 */
+    color: #ffffff;
+  }
+  .btn-primary, .btn-outline-success {
+    background-color: #ff69b4;
+    border-color: #ff69b4;
+  }
+  .btn-primary:hover, .btn-outline-success:hover {
+    background-color: #ff1493;
+    border-color: #ff1493;
+  }
+  .card {
+    border-color: #ff69b4;
+  }
+  .card-title {
+    color: #ff69b4;
+  }
+  .btn-info, .btn-success {
+    background-color: #ff69b4;
+    border-color: #ff69b4;
+  }
+  .btn-info:hover, .btn-success:hover {
+    background-color: #ff1493;
+    border-color: #ff1493;
+  }
+  .badge-info, .badge-danger {
+    background-color: #ff69b4;
+  }
+  footer {
+    background-color: #ff69b4;
+    color: #ffffff;
+    padding: 10px 0;
+  }
+  footer a {
+    color: #ffffff;
+  }
+  .recipe-list {
+    padding: 20px;
+  }
+  .recipe-heading {
+    color: #ff69b4; /* 粉色文字 */
+    font-size: 24px; /* 可以根據需要調整字體大小 */
+    font-weight: bold;
+    margin-bottom: 10px;
+  } 
+  .recipe-item {
+    background-color: #ff69b4; /* 粉色 */
+    color: #ffffff; /* 白色文字 */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  .img-small {
+    width: 100%; /* 调整中间图片为小尺寸 */
+    height: auto;
+  }
+  .img-large {
+    width: 33.33%; /* 左右两边图片为原始尺寸 */
+    height: auto;
+  }
+  .image-container {
+    text-align: center; /* 將內容置中 */
+    margin-top: 20px; /* 上方空白 */
+    margin-bottom: 20px; /* 下方空白 */
+  }
+  .image-container img {
+    max-width: 100%; /* 確保圖片不超出其容器的寬度 */
+    height: auto; /* 自動調整高度，保持比例 */
+    display: inline-block; /* 讓圖片可以在文字流中置中 */
+    border-radius: 5px; /* 圖片圓角 */
+  }
+  .center-text {
+    text-align: center; /* 將文字置中 */
+    margin-top: 20px; /* 上方空白 */
+    margin-bottom: 20px; /* 下方空白 */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 使用原本的字體 */
+    color: #ff69b4; /* 使用原本的顏色 */
+  }
+</style>
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Countries</a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link disabled" href="#">About Us</a>
+          </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="file:///C|/Users/MSIK/Desktop/網頁設計/image/1x/搜尋.png" alt="Sample Image"></button>
+      </form>
+  </div>
+</nav>
+
+<div class="jumbotron jumbotron-fluid text-center">
+  <img src="file:///C|/Users/MSIK/Desktop/網頁設計/image/王冠LOGO.png" alt="Sample Image" class="img-fluid">
+  <h1 class="display-4"><strong>Princess Recipe</strong>&nbsp;</h1>
+  <p class="lead">&nbsp;</p>
+  <p class="lead">Welcome to the princess's food kingdom</p>
+  <p class="col-lg-10 offset-lg-1">The Princess Recipe website aims to provide a rich variety of recipes and exquisite decoration suggestions by incorporating fairy tale plots and multicultural gastronomic elements, allowing users to feel the princess-like charm and fantasy in a gorgeous and elegant cooking experience.</p>
+  <img src="file:///C|/Users/MSIK/Desktop/網頁設計/1x/搜索.png" alt="Sample Image" class="img-fluid" onclick="imageClicked('Sample Image')">
+  <p></a></p>
+<p class="lead">
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  </p>
+</div>
+      </div>
+      <p>&nbsp;</p>
+      <p class="lead">
+<div class="image-container">
+  <img src="file:///C|/Users/MSIK/Desktop/網頁設計/1x/1x/資產 2.png" alt="Sample Image">
+</div>
+
+<div class="container">
+  <div class="row">
+    <p  class="col-lg-8 offset-lg-2 text-center">
+    Explore our site for a selection of recipes and cooking instructional vide as well as healthy eating tips and holiday special events, so you can enjoy a gorgeous culinary experience while planning the perfect gourmet feast for every special occasion.</p>
+  </div>
+  <br>
+  <hr>
+  <br>
+  
+  <div class="row justify-content-center">
+    <div class="col-md-6 text-center col-lg-4">
+      <img src="file:///C|/Users/MSIK/Desktop/網頁設計/1x/資產 9.png" alt="Sample Image" class="img-fluid">
+	  <pre class="lead text-lowercase">&nbsp;</pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="file:///C|/Users/MSIK/Desktop/網頁設計/image/新增資料夾/1x/資產 16.png" alt="Card image cap" onclick="imageClicked('Hot dog')">
+
+        <div class="card-body">
+              <h4 class="card-title">Hot dog</h4>
+              <p class="card-text">Originating in the United States at the end of the 19th century, it was first introduced by German immigrants and...</p>
+              <br><br>
+              <a href="#" class="btn btn-primary">American</a>
+        </div>
+      </div>
+    </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="file:///C|/Users/MSIK/Desktop/網頁設計/image/新增資料夾/1x/資產 14.png" alt="Card image cap" onclick="imageClicked('Strawberry tart')">
+            <div class="card-body">
+              <h4 class="card-title">Strawberry tart</h4>
+              <p class="card-text">Originating from France, it first appeared in the Middle Ages and later became popular throughout ...</p>
+              <br><br>
+              <a href="#" class="btn btn-primary">Dessert</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="file:///C|/Users/MSIK/Desktop/網頁設計/image/新增資料夾/資產 6.png" alt="Card image cap" onclick="imageClicked('Sushi')">
+            <div class="card-body">
+              <h4 class="card-title">Sushi</h4>
+              <p class="card-text">Sushi originated in ancient Japan, around the eighth century AD. The original method was to use ...</p>
+              <br><br>
+              <a href="#" class="btn btn-primary">Japanese-style</a>
+            </div>
+          </div>
+        </div>
+  </div>
+      <p>&nbsp;</p>
+  <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="file:///C|/Users/MSIK/Desktop/網頁設計/image/新增資料夾/1x/資產 15.png" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Fudge Cookies</h4>
+              <p class="card-text">Originated in England, it was originally a small cake used to test the temperature of the oven. Over time, they...</p>
+              <br><br>
+              <a href="#" class="btn btn-primary">Snack</a>
+            </div>
+          </div>
+        </div>
+        
+            <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="file:///C|/Users/MSIK/Desktop/網頁設計/image/新增資料夾/1x/資產 11.png" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Spicy rice cakes</h4>
+              <p class="card-text">Tteokbokki originated in Korea and is a traditional dish made with rice cakes, chili sauce and various ingredients...</p>
+              <br><br>
+              <a href="#" class="btn btn-primary">Korean style</a>
+            </div>
+          </div>
+        </div>
+            <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="file:///C|/Users/MSIK/Desktop/網頁設計/image/新增資料夾/1x/資產 10.png" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Tempura</h4>
+              <p class="card-text">Tempura originated in the Edo period of Japan. Because of its simplicity, deliciousness and diversity, it has...</p>
+              <br><br>
+              <a href="#" class="btn btn-primary">fried food</a>
+            </div>
+          </div>
+        </div>
+
+		  
+  </div>
+</div>
+	
+		  
+      </div>
+      <div class="row">
+      </div>
+      <br/>
+      <br/>
+      <div class="row">
+<div class="col-md-4 col-lg-12"> &nbsp; &nbsp;</div>
+		  <div class="image-container">
+<img src="file:///C|/Users/MSIK/Desktop/網頁設計/1x/資產 9.png" alt="Sample Image">
+		  
+        <div class="col-lg-8 offset-lg-2">
+  </style>
+</head>
+<body>
+  &nbsp;
+  <div class="container">
+    <div class="recipe-list">
+<div class="center-text">
+  <h4><strong> 12 Princess-Themed Recipes </strong></h4>
+</div>
+
+</body>
+</html>
+      <div class="recipe-item">
+		     <a class="btn btn-primary btn-lg" href="#" role="button">1. Cinderella Princess: Recipes inspired by royal banquets or  ...</a>
+      </div>
+      <div class="recipe-item">
+		  		     <a class="btn btn-primary btn-lg" href="#" role="button">2. Sleeping Beauty Princess: Recipes that promote sleep or ..</a>
+      </div>
+      <div class="recipe-item">
+		  		  		     <a class="btn btn-primary btn-lg" href="#" role="button">3. Snow White Princess: Fresh vegetable dishes or desserts ...</a>
+      </div>
+      <div class="recipe-item">
+		  		  		     <a class="btn btn-primary btn-lg" href="#" role="button">4. Jasmine Princess: Middle Eastern cuisine or beverages ...</a>
+      </div>
+    </div>
+        <div class="col-md-4  col-lg-12"> &nbsp; </div>
+		    <img src="file:///C|/Users/MSIK/Desktop/網頁設計/image/1x/資產 1.png" alt="Sample Image" class="img-fluid">
+		  
+  </div>
+      <br/>
+      <br/>
+      <div class="row">
+        <div class="col-md-6 text-center">
+          <div class="card">
+            <div class="card-body">
+              <h3><strong>@ Gordon Ramsay </strong><strong>&nbsp;</strong></h3>
+              <p>A well-known British chef and TV presenter, known for his picky food and... </p>
+              <button type="button" class="btn btn-info btn-md">Facebook&nbsp;</button>
+              <button type="button" class="btn btn-success btn-md">Instagram&nbsp;</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 text-center">
+          <div class="card">
+            <div class="card-body">
+              <h3><strong>@Julia Child</strong> <strong>&nbsp;</strong></h3>
+              <p>American chef and author who popularized French cooking on television and... </p>
+              <button type="button" class="btn btn-info btn-md">Facebook</button>
+              <button type="button" class="btn btn-success btn-md">Instagram</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <hr>
+      <div class="row">
+        <div class="text-center col-lg-6 offset-lg-3">
+  <h4>Princess&nbsp;Recipe </h4>
+<p>Fairy tales &copy;2024                
